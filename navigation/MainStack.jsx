@@ -68,8 +68,6 @@ function MyTabs() {
                             break;
                         case 'Generador Qr':
                             iconName = focused ? 'qr-code' : 'qr-code-outline'
-                        case 'Camera':
-                            iconName = focused ? 'camera' : 'camera-outline'
                     }
 
                     return <Icon name={iconName} size={size} color={color} />;
@@ -78,7 +76,6 @@ function MyTabs() {
         >
             <tab.Screen name='Inicio' component={MyStack} />
             <tab.Screen name='Captura de grupo' component={InputG} />
-            <tab.Screen name='Camera' component={Opencamera} />
             <tab.Screen name='Generador Qr' component={QrGenerator} />
 
 

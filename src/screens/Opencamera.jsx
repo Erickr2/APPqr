@@ -44,12 +44,12 @@ export const Opencamera = ( { navigation, route }) => {
     return (
       <View style={{...styles.view}}>
         <QRCodeScanner
-          onRead={({ data }) => handle(data, ToastAndroid.show(`Se capturo el alumno correctamente`, ToastAndroid.TOP))}
+          onRead={({ data }) => handle(data, ToastAndroid.show(`Se capturo el alumno ${data}`, ToastAndroid.TOP))}
           flashMode={RNCamera.Constants.FlashMode.off}
           reactivate={true}
           reactivateTimeout={500}
           cameraProps={String}
-          
+          showMarker={true}
         />
         <TouchableOpacity
           style={{ ...styles.button}}

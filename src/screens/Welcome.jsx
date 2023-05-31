@@ -64,8 +64,8 @@ export const Welcome = () => {
                     onPress={() => navigation.navigate("Input Group")}
                     style={{
                         ...styles.button,
-
                     }}
+                    
                 >
                     <Text
                         style={{ ...styles.textButton }}
